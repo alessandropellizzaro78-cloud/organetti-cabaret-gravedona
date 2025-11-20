@@ -183,9 +183,11 @@ body {
 
 /* GALLERIA */
 .gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 foto per riga */
+    gap: 1.5rem; /* spazio migliore */
+    max-width: 900px; /* restringe la galleria */
+    margin: 0 auto; /* centra la galleria */
 }
 
 .gallery-item {
